@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      class="style1"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script defer src="mapty.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapty</title>
+  </head>
+  <body>
+    <ul>
+      <div class="flex">
+        <div class="data">
+          <img class="logo__map" src="logo.png" alt="maptyLOGO" />
+
+          <div class="form__container">
+            <form class="form tran hidden">
+              <div class="form-flex">
+                <div class="lab_inp">
+                  <label class="label">type</label>
+                  <select class="select input select__toggle">
+                    <option value="running">running</option>
+                    <option value="cycling">cycling</option>
+                  </select>
+                </div>
+                <div class="lab_inp">
+                  <label class="label">Distance</label>
+                  <input class="input distanceInput inputText" type="text" />
+                </div>
+              </div>
+              <div class="form-flex">
+                <div class="lab_inp">
+                  <label class="label">duration</label>
+                  <input class="input durationInput" type="text" />
+                </div>
+                <div class="lab_inp">
+                  <label class="label">cadence</label>
+                  <input class="input caseInput" type="text" />
+                </div>
+                <div class="lab_inp toggle__hidden">
+                  <label class="label">elevation</label>
+                  <input class="input inputElevation" type="text" />
+                </div>
+              </div>
+              <input type="submit" class="opacity" value="Submit" />
+            </form>
+            <!-- <div class="renderForm">
+              <h1 class="head1">cycling on may 14</h1>
+              <div class="inside-div">
+                
+                <p>🚴‍♂️ 1km</p>
+                <p>⏱ 1s</p>
+                <p>⚡ 1.0H/km</p>
+                <p>⛰ 3m</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div id="map"></div>
+      </div>
+    </ul>
+  </body>
+</html>

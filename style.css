@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#map {
+  height: 95vh;
+  width: 100%;
+}
+body {
+  /* margin: 2rem; */
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  text-transform: capitalize;
+  font-size: 62.5%;
+}
+.flex {
+  display: grid;
+  /* overflow: hidden; */
+  grid-template-columns: 1fr 1.5fr;
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* border: 0.1rem solid #42484d;
+  border-radius: 0.4em; */
+}
+:root {
+  --main-color: #2d3439;
+  --primery-color: #42484d;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+  flex-basis: 50rem;
+  height: 95vh;
+
+  /* overflow-y: hidden;
+  overflow-x: unset; */
+  /* border-top-left-radius: 0.4rem;
+  
+  border-bottom-left-radius: 0.4rem; */
+}
+.popup,
+.running-popup,
+.cycling-popup {
+  border-left: 5px solid green;
+  background-color: green;
+}
+.logo__map {
+  height: 5.2rem;
+  align-self: center;
+  margin-bottom: 4rem;
+}
+.label {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.input {
+  width: 5rem;
+  height: 1.6rem;
+  /* margin-left: 2rem; */
+}
+.form__container {
+  align-self: center;
+  height: 65%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  -ms-overflow-style: none;
+}
+.form__container::-webkit-scrollbar {
+  display: none;
+}
+.form {
+  display: grid;
+  background-color: var(--primery-color);
+  border-radius: 5px;
+  padding: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  /* row-gap: 100rem; */
+  /* gap: 2rem; */
+  margin-left: 2rem;
+  margin-right: 2rem;
+  /* transition: all s; */
+  /* justify-content: ; */
+}
+/* .tran { */
+/* transform: rotateY(-30rem);
+  height: 0;
+} */
+.lab_inp {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0.3rem 0;
+}
+.hidden {
+  display: none;
+}
+.opacity {
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+.toggle__hidden {
+  display: none;
+}
+.cycling-popup {
+  /* border-left: 3px solid green; */
+  border-left: 5px solid orange;
+  background-color: orange;
+}
+.running-popup {
+  /* border-left: 3px solid green; */
+  border-left: 5px solid green;
+  background-color: green;
+}
+.renderForm {
+  background-color: var(--primery-color);
+  border-radius: 5px;
+  margin-top: 1rem;
+  color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  /* text-align: center; */
+  /* width: 40rem; */
+}
+.inside-div {
+  white-space: nowrap;
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: center;
+  padding: 0 1rem 1rem 1rem;
+  /* font-family: "Crimson Text"; */
+  color: rgb(228, 223, 223);
+  gap: 2.4rem;
+}
+.head1 {
+  /* margin: rem 0; */
+  padding: 1rem 0 1rem 2rem;
+  font-size: 1.2rem;
+}
+.short {
+  text-transform: lowercase;
+}
